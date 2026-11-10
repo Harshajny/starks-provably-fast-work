@@ -1,0 +1,15 @@
+*.bin
+*_hits.txt
+!hits.txt
+enum12
+binom
+trinom
+trinom2
+linesmax
+listcount
+quadprobe
+quad
+concur3
+weigh
+bbbin
+__pycache__/

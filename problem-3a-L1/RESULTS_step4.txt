@@ -1,0 +1,364 @@
+# Step 4 outputs (F_(p^2), p = 2^31-1, mu32, RS[17], A = 20)
+## tri_stats.py
+triples with any hit: 255 of 455; overall max R at one word: 56
+triple: maxR W(distinct lines) U  maxR+W+U
+  (2, 8, 14): 16 8008(2272) 0  8024
+  (6, 8, 10): 7 8008(6288) 0  8015
+  (2, 6, 14): 6 8008(3408) 0  8014
+  (6, 10, 14): 6 8008(3408) 0  8014
+  (2, 10, 14): 6 8008(3408) 0  8014
+  (2, 6, 10): 6 8008(3408) 0  8014
+  (8, 10, 14): 4 8008(7504) 0  8012
+  (2, 6, 8): 4 8008(7504) 0  8012
+  (2, 4, 14): 3 8008(7176) 0  8011
+  (10, 12, 14): 3 8008(7864) 0  8011
+  (2, 4, 6): 3 8008(7864) 0  8011
+  (2, 12, 14): 3 8008(7176) 0  8011
+  (6, 10, 12): 2 8008(7880) 0  8010
+  (2, 10, 12): 2 8008(7796) 0  8010
+  (4, 10, 14): 2 8008(7944) 0  8010
+  (4, 6, 10): 2 8008(7880) 0  8010
+  (2, 6, 12): 2 8008(7944) 0  8010
+  (4, 6, 14): 2 8008(7796) 0  8010
+  (2, 8, 12): 1 8008(7825) 0  8009
+  (4, 8, 14): 1 8008(7825) 0  8009
+  (8, 12, 14): 1 8008(7825) 0  8009
+  (4, 6, 8): 1 8008(7825) 0  8009
+  (6, 12, 14): 1 8008(7780) 0  8009
+  (8, 10, 12): 1 8008(7825) 0  8009
+  (6, 8, 12): 1 8008(7825) 0  8009
+triples where the crude bound exceeds 504: 35
+
+## linesmax.c per-triple summary (T lines) and candidates (C lines, weight >= 200)
+T 1 4 5 distinct_lines=40 max_single_line_weight=3 max_concurrent_weight=0 (0 lines)
+T 1 4 8 distinct_lines=1 max_single_line_weight=56 max_concurrent_weight=0 (0 lines)
+T 1 4 9 distinct_lines=20 max_single_line_weight=6 max_concurrent_weight=0 (0 lines)
+T 1 4 12 distinct_lines=1 max_single_line_weight=56 max_concurrent_weight=0 (0 lines)
+T 1 4 13 distinct_lines=8 max_single_line_weight=7 max_concurrent_weight=0 (0 lines)
+T 1 5 8 distinct_lines=40 max_single_line_weight=3 max_concurrent_weight=0 (0 lines)
+T 1 5 9 distinct_lines=56 max_single_line_weight=1 max_concurrent_weight=6 (6 lines)
+T 1 5 12 distinct_lines=40 max_single_line_weight=3 max_concurrent_weight=0 (0 lines)
+T 1 5 13 distinct_lines=56 max_single_line_weight=1 max_concurrent_weight=6 (6 lines)
+T 1 8 9 distinct_lines=36 max_single_line_weight=6 max_concurrent_weight=0 (0 lines)
+T 1 8 12 distinct_lines=1 max_single_line_weight=56 max_concurrent_weight=0 (0 lines)
+T 1 8 13 distinct_lines=8 max_single_line_weight=7 max_concurrent_weight=0 (0 lines)
+T 1 9 12 distinct_lines=20 max_single_line_weight=6 max_concurrent_weight=0 (0 lines)
+T 1 9 13 distinct_lines=56 max_single_line_weight=1 max_concurrent_weight=6 (6 lines)
+T 1 12 13 distinct_lines=8 max_single_line_weight=7 max_concurrent_weight=0 (0 lines)
+T 2 4 6 distinct_lines=7864 max_single_line_weight=3 max_concurrent_weight=35 (17 lines)
+T 2 4 8 distinct_lines=7825 max_single_line_weight=56 max_concurrent_weight=16 (16 lines)
+T 2 4 10 distinct_lines=7780 max_single_line_weight=6 max_concurrent_weight=80 (67 lines)
+T 2 4 12 distinct_lines=7169 max_single_line_weight=56 max_concurrent_weight=21 (18 lines)
+T 2 4 14 distinct_lines=7176 max_single_line_weight=7 max_concurrent_weight=37 (15 lines)
+T 2 6 8 distinct_lines=7504 max_single_line_weight=17 max_concurrent_weight=93 (77 lines)
+T 2 6 10 distinct_lines=3408 max_single_line_weight=13 max_concurrent_weight=98 (16 lines)
+T 2 6 12 distinct_lines=7944 max_single_line_weight=3 max_concurrent_weight=25 (17 lines)
+T 2 6 14 distinct_lines=3408 max_single_line_weight=13 max_concurrent_weight=98 (16 lines)
+C 2 8 10 0 1 1 0 221 211
+C 2 8 10 0 2147483646 1 0 221 211
+C 2 8 10 32768 32768 2147483646 0 221 211
+C 2 8 10 32768 2147450879 2147483646 0 221 211
+C 2 8 10 1 0 1 0 221 211
+C 2 8 10 1556715293 978592373 0 2147483646 221 211
+C 2 8 10 1556715293 1168891274 0 1 221 211
+C 2 8 10 978592373 1556715293 0 1 221 211
+C 2 8 10 978592373 590768354 0 2147483646 221 211
+C 2 8 10 1168891274 1556715293 0 2147483646 221 211
+C 2 8 10 1168891274 590768354 0 1 221 211
+C 2 8 10 590768354 978592373 0 1 221 211
+C 2 8 10 590768354 1168891274 0 2147483646 221 211
+C 2 8 10 2147483646 0 1 0 221 211
+C 2 8 10 2147450879 32768 2147483646 0 221 211
+C 2 8 10 2147450879 2147450879 2147483646 0 221 211
+T 2 8 10 distinct_lines=7460 max_single_line_weight=6 max_concurrent_weight=221 (211 lines)
+T 2 8 12 distinct_lines=7825 max_single_line_weight=56 max_concurrent_weight=16 (16 lines)
+C 2 8 14 0 1569360727 2147483646 0 203 16
+C 2 8 14 0 1759659628 2147483646 0 203 16
+C 2 8 14 0 387824019 2147483646 0 203 16
+C 2 8 14 0 578122920 2147483646 0 203 16
+C 2 8 14 1073741824 1073774592 2147450879 32768 203 16
+C 2 8 14 1073741824 1073709056 32768 2147450879 203 16
+C 2 8 14 1073741824 1073774591 32768 32768 203 16
+C 2 8 14 1073741824 1073709055 2147450879 2147450879 203 16
+C 2 8 14 1073774592 1073741824 32768 32768 203 16
+C 2 8 14 1073774592 1073741823 32768 2147450879 203 16
+C 2 8 14 1073709056 1073741824 2147450879 2147450879 203 16
+C 2 8 14 1073709056 1073741823 2147450879 32768 203 16
+C 2 8 14 1556715293 1556715293 0 1 203 16
+C 2 8 14 1556715293 590768354 0 2147483646 203 16
+C 2 8 14 1569360727 0 1 0 203 16
+C 2 8 14 1759659628 0 1 0 203 16
+C 2 8 14 978592373 978592373 0 1 203 16
+C 2 8 14 978592373 1168891274 0 2147483646 203 16
+C 2 8 14 1168891274 978592373 0 2147483646 203 16
+C 2 8 14 1168891274 1168891274 0 1 203 16
+C 2 8 14 387824019 0 1 0 203 16
+C 2 8 14 578122920 0 1 0 203 16
+C 2 8 14 590768354 1556715293 0 2147483646 203 16
+C 2 8 14 590768354 590768354 0 1 203 16
+C 2 8 14 1073774591 1073741824 2147450879 32768 203 16
+C 2 8 14 1073774591 1073741823 2147450879 2147450879 203 16
+C 2 8 14 1073709055 1073741824 32768 2147450879 203 16
+C 2 8 14 1073709055 1073741823 32768 32768 203 16
+C 2 8 14 1073741823 1073774592 2147450879 2147450879 203 16
+C 2 8 14 1073741823 1073709056 32768 32768 203 16
+C 2 8 14 1073741823 1073774591 32768 2147450879 203 16
+C 2 8 14 1073741823 1073709055 2147450879 32768 203 16
+T 2 8 14 distinct_lines=2272 max_single_line_weight=33 max_concurrent_weight=203 (16 lines)
+T 2 10 12 distinct_lines=7796 max_single_line_weight=6 max_concurrent_weight=83 (78 lines)
+T 2 10 14 distinct_lines=3408 max_single_line_weight=13 max_concurrent_weight=98 (16 lines)
+T 2 12 14 distinct_lines=7176 max_single_line_weight=7 max_concurrent_weight=37 (15 lines)
+T 3 4 7 distinct_lines=40 max_single_line_weight=3 max_concurrent_weight=0 (0 lines)
+T 3 4 8 distinct_lines=1 max_single_line_weight=56 max_concurrent_weight=0 (0 lines)
+T 3 4 11 distinct_lines=20 max_single_line_weight=6 max_concurrent_weight=0 (0 lines)
+T 3 4 12 distinct_lines=1 max_single_line_weight=56 max_concurrent_weight=0 (0 lines)
+T 3 4 15 distinct_lines=8 max_single_line_weight=7 max_concurrent_weight=0 (0 lines)
+T 3 7 8 distinct_lines=40 max_single_line_weight=3 max_concurrent_weight=0 (0 lines)
+T 3 7 11 distinct_lines=56 max_single_line_weight=1 max_concurrent_weight=6 (6 lines)
+T 3 7 12 distinct_lines=40 max_single_line_weight=3 max_concurrent_weight=0 (0 lines)
+T 3 7 15 distinct_lines=56 max_single_line_weight=1 max_concurrent_weight=6 (6 lines)
+T 3 8 11 distinct_lines=20 max_single_line_weight=2 max_concurrent_weight=0 (0 lines)
+T 3 8 12 distinct_lines=1 max_single_line_weight=56 max_concurrent_weight=0 (0 lines)
+T 3 8 15 distinct_lines=8 max_single_line_weight=7 max_concurrent_weight=0 (0 lines)
+T 3 11 12 distinct_lines=20 max_single_line_weight=6 max_concurrent_weight=0 (0 lines)
+T 3 11 15 distinct_lines=56 max_single_line_weight=1 max_concurrent_weight=6 (6 lines)
+T 3 12 15 distinct_lines=8 max_single_line_weight=7 max_concurrent_weight=0 (0 lines)
+T 4 5 8 distinct_lines=1 max_single_line_weight=56 max_concurrent_weight=0 (0 lines)
+T 4 5 9 distinct_lines=24 max_single_line_weight=5 max_concurrent_weight=0 (0 lines)
+T 4 5 12 distinct_lines=1 max_single_line_weight=56 max_concurrent_weight=0 (0 lines)
+T 4 5 13 distinct_lines=20 max_single_line_weight=6 max_concurrent_weight=0 (0 lines)
+T 4 6 8 distinct_lines=7825 max_single_line_weight=56 max_concurrent_weight=15 (13 lines)
+T 4 6 10 distinct_lines=7880 max_single_line_weight=5 max_concurrent_weight=25 (19 lines)
+T 4 6 12 distinct_lines=7857 max_single_line_weight=56 max_concurrent_weight=14 (12 lines)
+T 4 6 14 distinct_lines=7796 max_single_line_weight=6 max_concurrent_weight=83 (78 lines)
+T 4 7 8 distinct_lines=1 max_single_line_weight=56 max_concurrent_weight=0 (0 lines)
+T 4 7 11 distinct_lines=24 max_single_line_weight=5 max_concurrent_weight=0 (0 lines)
+T 4 7 12 distinct_lines=1 max_single_line_weight=56 max_concurrent_weight=0 (0 lines)
+T 4 7 15 distinct_lines=20 max_single_line_weight=6 max_concurrent_weight=0 (0 lines)
+T 4 8 9 distinct_lines=1 max_single_line_weight=56 max_concurrent_weight=0 (0 lines)
+T 4 8 10 distinct_lines=7825 max_single_line_weight=56 max_concurrent_weight=15 (13 lines)
+T 4 8 11 distinct_lines=1 max_single_line_weight=56 max_concurrent_weight=0 (0 lines)
+C 4 8 12 0 1 2147483646 0 603 160
+C 4 8 12 0 2147483646 2147483646 0 603 160
+C 4 8 12 32768 32768 0 1 603 160
+C 4 8 12 32768 2147450879 0 2147483646 603 160
+C 4 8 12 1 0 1 0 603 160
+C 4 8 12 2147483646 0 1 0 603 160
+C 4 8 12 2147450879 32768 0 2147483646 603 160
+C 4 8 12 2147450879 2147450879 0 1 603 160
+T 4 8 12 distinct_lines=2148 max_single_line_weight=25 max_concurrent_weight=603 (160 lines)
+T 4 8 13 distinct_lines=1 max_single_line_weight=56 max_concurrent_weight=0 (0 lines)
+T 4 8 14 distinct_lines=7825 max_single_line_weight=56 max_concurrent_weight=16 (16 lines)
+T 4 8 15 distinct_lines=1 max_single_line_weight=56 max_concurrent_weight=0 (0 lines)
+T 4 9 12 distinct_lines=1 max_single_line_weight=56 max_concurrent_weight=0 (0 lines)
+T 4 9 13 distinct_lines=40 max_single_line_weight=3 max_concurrent_weight=0 (0 lines)
+T 4 10 12 distinct_lines=7857 max_single_line_weight=56 max_concurrent_weight=14 (12 lines)
+T 4 10 14 distinct_lines=7944 max_single_line_weight=3 max_concurrent_weight=25 (17 lines)
+T 4 11 12 distinct_lines=1 max_single_line_weight=56 max_concurrent_weight=0 (0 lines)
+T 4 11 15 distinct_lines=40 max_single_line_weight=3 max_concurrent_weight=0 (0 lines)
+T 4 12 13 distinct_lines=1 max_single_line_weight=56 max_concurrent_weight=0 (0 lines)
+T 4 12 14 distinct_lines=7169 max_single_line_weight=56 max_concurrent_weight=21 (18 lines)
+T 4 12 15 distinct_lines=1 max_single_line_weight=56 max_concurrent_weight=0 (0 lines)
+T 5 8 9 distinct_lines=24 max_single_line_weight=5 max_concurrent_weight=0 (0 lines)
+T 5 8 12 distinct_lines=1 max_single_line_weight=56 max_concurrent_weight=0 (0 lines)
+T 5 8 13 distinct_lines=20 max_single_line_weight=2 max_concurrent_weight=0 (0 lines)
+T 5 9 12 distinct_lines=24 max_single_line_weight=5 max_concurrent_weight=0 (0 lines)
+T 5 9 13 distinct_lines=56 max_single_line_weight=1 max_concurrent_weight=6 (6 lines)
+T 5 12 13 distinct_lines=20 max_single_line_weight=6 max_concurrent_weight=0 (0 lines)
+T 6 8 10 distinct_lines=6288 max_single_line_weight=31 max_concurrent_weight=151 (65 lines)
+T 6 8 12 distinct_lines=7825 max_single_line_weight=56 max_concurrent_weight=15 (13 lines)
+C 6 8 14 0 1 1 0 221 211
+C 6 8 14 0 2147483646 1 0 221 211
+C 6 8 14 32768 32768 2147483646 0 221 211
+C 6 8 14 32768 2147450879 2147483646 0 221 211
+C 6 8 14 1 0 1 0 221 211
+C 6 8 14 1556715293 978592373 0 1 221 211
+C 6 8 14 1556715293 1168891274 0 2147483646 221 211
+C 6 8 14 978592373 1556715293 0 2147483646 221 211
+C 6 8 14 978592373 590768354 0 1 221 211
+C 6 8 14 1168891274 1556715293 0 1 221 211
+C 6 8 14 1168891274 590768354 0 2147483646 221 211
+C 6 8 14 590768354 978592373 0 2147483646 221 211
+C 6 8 14 590768354 1168891274 0 1 221 211
+C 6 8 14 2147483646 0 1 0 221 211
+C 6 8 14 2147450879 32768 2147483646 0 221 211
+C 6 8 14 2147450879 2147450879 2147483646 0 221 211
+T 6 8 14 distinct_lines=7460 max_single_line_weight=6 max_concurrent_weight=221 (211 lines)
+T 6 10 12 distinct_lines=7880 max_single_line_weight=5 max_concurrent_weight=25 (19 lines)
+T 6 10 14 distinct_lines=3408 max_single_line_weight=13 max_concurrent_weight=98 (16 lines)
+T 6 12 14 distinct_lines=7780 max_single_line_weight=6 max_concurrent_weight=80 (67 lines)
+T 7 8 11 distinct_lines=24 max_single_line_weight=5 max_concurrent_weight=0 (0 lines)
+T 7 8 12 distinct_lines=1 max_single_line_weight=56 max_concurrent_weight=0 (0 lines)
+T 7 8 15 distinct_lines=36 max_single_line_weight=6 max_concurrent_weight=0 (0 lines)
+T 7 11 12 distinct_lines=24 max_single_line_weight=5 max_concurrent_weight=0 (0 lines)
+T 7 11 15 distinct_lines=56 max_single_line_weight=1 max_concurrent_weight=6 (6 lines)
+T 7 12 15 distinct_lines=20 max_single_line_weight=6 max_concurrent_weight=0 (0 lines)
+T 8 9 12 distinct_lines=1 max_single_line_weight=56 max_concurrent_weight=0 (0 lines)
+T 8 9 13 distinct_lines=40 max_single_line_weight=3 max_concurrent_weight=0 (0 lines)
+T 8 10 12 distinct_lines=7825 max_single_line_weight=56 max_concurrent_weight=15 (13 lines)
+T 8 10 14 distinct_lines=7504 max_single_line_weight=17 max_concurrent_weight=93 (77 lines)
+T 8 11 12 distinct_lines=1 max_single_line_weight=56 max_concurrent_weight=0 (0 lines)
+T 8 11 15 distinct_lines=40 max_single_line_weight=3 max_concurrent_weight=0 (0 lines)
+T 8 12 13 distinct_lines=1 max_single_line_weight=56 max_concurrent_weight=0 (0 lines)
+T 8 12 14 distinct_lines=7825 max_single_line_weight=56 max_concurrent_weight=16 (16 lines)
+T 8 12 15 distinct_lines=1 max_single_line_weight=56 max_concurrent_weight=0 (0 lines)
+T 9 12 13 distinct_lines=40 max_single_line_weight=3 max_concurrent_weight=0 (0 lines)
+T 10 12 14 distinct_lines=7864 max_single_line_weight=3 max_concurrent_weight=35 (17 lines)
+T 11 12 15 distinct_lines=40 max_single_line_weight=3 max_concurrent_weight=0 (0 lines)
+
+## words.txt (input to listcount.c)
+ctrl504 2 1 0 14 1556715293 1168891274
+ctrl497 2 1 0 14 1 0
+cand_2_8_10_w221 2 1 0 8 0 1 10 1 0
+cand_2_8_10_w221 2 1 0 8 0 2147483646 10 1 0
+cand_2_8_10_w221 2 1 0 8 32768 32768 10 2147483646 0
+cand_2_8_10_w221 2 1 0 8 32768 2147450879 10 2147483646 0
+cand_2_8_10_w221 2 1 0 8 1 0 10 1 0
+cand_2_8_10_w221 2 1 0 8 1556715293 978592373 10 0 2147483646
+cand_2_8_10_w221 2 1 0 8 1556715293 1168891274 10 0 1
+cand_2_8_10_w221 2 1 0 8 978592373 1556715293 10 0 1
+cand_2_8_10_w221 2 1 0 8 978592373 590768354 10 0 2147483646
+cand_2_8_10_w221 2 1 0 8 1168891274 1556715293 10 0 2147483646
+cand_2_8_10_w221 2 1 0 8 1168891274 590768354 10 0 1
+cand_2_8_10_w221 2 1 0 8 590768354 978592373 10 0 1
+cand_2_8_10_w221 2 1 0 8 590768354 1168891274 10 0 2147483646
+cand_2_8_10_w221 2 1 0 8 2147483646 0 10 1 0
+cand_2_8_10_w221 2 1 0 8 2147450879 32768 10 2147483646 0
+cand_2_8_10_w221 2 1 0 8 2147450879 2147450879 10 2147483646 0
+cand_2_8_14_w203 2 1 0 8 0 1569360727 14 2147483646 0
+cand_2_8_14_w203 2 1 0 8 0 1759659628 14 2147483646 0
+cand_2_8_14_w203 2 1 0 8 0 387824019 14 2147483646 0
+cand_2_8_14_w203 2 1 0 8 0 578122920 14 2147483646 0
+cand_2_8_14_w203 2 1 0 8 1073741824 1073774592 14 2147450879 32768
+cand_2_8_14_w203 2 1 0 8 1073741824 1073709056 14 32768 2147450879
+cand_2_8_14_w203 2 1 0 8 1073741824 1073774591 14 32768 32768
+cand_2_8_14_w203 2 1 0 8 1073741824 1073709055 14 2147450879 2147450879
+cand_2_8_14_w203 2 1 0 8 1073774592 1073741824 14 32768 32768
+cand_2_8_14_w203 2 1 0 8 1073774592 1073741823 14 32768 2147450879
+cand_2_8_14_w203 2 1 0 8 1073709056 1073741824 14 2147450879 2147450879
+cand_2_8_14_w203 2 1 0 8 1073709056 1073741823 14 2147450879 32768
+cand_2_8_14_w203 2 1 0 8 1556715293 1556715293 14 0 1
+cand_2_8_14_w203 2 1 0 8 1556715293 590768354 14 0 2147483646
+cand_2_8_14_w203 2 1 0 8 1569360727 0 14 1 0
+cand_2_8_14_w203 2 1 0 8 1759659628 0 14 1 0
+cand_2_8_14_w203 2 1 0 8 978592373 978592373 14 0 1
+cand_2_8_14_w203 2 1 0 8 978592373 1168891274 14 0 2147483646
+cand_2_8_14_w203 2 1 0 8 1168891274 978592373 14 0 2147483646
+cand_2_8_14_w203 2 1 0 8 1168891274 1168891274 14 0 1
+cand_2_8_14_w203 2 1 0 8 387824019 0 14 1 0
+cand_2_8_14_w203 2 1 0 8 578122920 0 14 1 0
+cand_2_8_14_w203 2 1 0 8 590768354 1556715293 14 0 2147483646
+cand_2_8_14_w203 2 1 0 8 590768354 590768354 14 0 1
+cand_2_8_14_w203 2 1 0 8 1073774591 1073741824 14 2147450879 32768
+cand_2_8_14_w203 2 1 0 8 1073774591 1073741823 14 2147450879 2147450879
+cand_2_8_14_w203 2 1 0 8 1073709055 1073741824 14 32768 2147450879
+cand_2_8_14_w203 2 1 0 8 1073709055 1073741823 14 32768 32768
+cand_2_8_14_w203 2 1 0 8 1073741823 1073774592 14 2147450879 2147450879
+cand_2_8_14_w203 2 1 0 8 1073741823 1073709056 14 32768 32768
+cand_2_8_14_w203 2 1 0 8 1073741823 1073774591 14 32768 2147450879
+cand_2_8_14_w203 2 1 0 8 1073741823 1073709055 14 2147450879 32768
+cand_4_8_12_w603 4 1 0 8 0 1 12 2147483646 0
+cand_4_8_12_w603 4 1 0 8 0 2147483646 12 2147483646 0
+cand_4_8_12_w603 4 1 0 8 32768 32768 12 0 1
+cand_4_8_12_w603 4 1 0 8 32768 2147450879 12 0 2147483646
+cand_4_8_12_w603 4 1 0 8 1 0 12 1 0
+cand_4_8_12_w603 4 1 0 8 2147483646 0 12 1 0
+cand_4_8_12_w603 4 1 0 8 2147450879 32768 12 0 2147483646
+cand_4_8_12_w603 4 1 0 8 2147450879 2147450879 12 0 1
+cand_6_8_14_w221 6 1 0 8 0 1 14 1 0
+cand_6_8_14_w221 6 1 0 8 0 2147483646 14 1 0
+cand_6_8_14_w221 6 1 0 8 32768 32768 14 2147483646 0
+cand_6_8_14_w221 6 1 0 8 32768 2147450879 14 2147483646 0
+cand_6_8_14_w221 6 1 0 8 1 0 14 1 0
+cand_6_8_14_w221 6 1 0 8 1556715293 978592373 14 0 1
+cand_6_8_14_w221 6 1 0 8 1556715293 1168891274 14 0 2147483646
+cand_6_8_14_w221 6 1 0 8 978592373 1556715293 14 0 2147483646
+cand_6_8_14_w221 6 1 0 8 978592373 590768354 14 0 1
+cand_6_8_14_w221 6 1 0 8 1168891274 1556715293 14 0 1
+cand_6_8_14_w221 6 1 0 8 1168891274 590768354 14 0 2147483646
+cand_6_8_14_w221 6 1 0 8 590768354 978592373 14 0 2147483646
+cand_6_8_14_w221 6 1 0 8 590768354 1168891274 14 0 1
+cand_6_8_14_w221 6 1 0 8 2147483646 0 14 1 0
+cand_6_8_14_w221 6 1 0 8 2147450879 32768 14 2147483646 0
+cand_6_8_14_w221 6 1 0 8 2147450879 2147450879 14 2147483646 0
+
+## listcount.c exact recount
+ctrl504 passing=504 distinct=504 agreement: 20:504
+ctrl497 passing=497 distinct=497 agreement: 20:497
+cand_2_8_10_w221 passing=230230 distinct=1 agreement: 26:1
+cand_2_8_10_w221 passing=230230 distinct=1 agreement: 26:1
+cand_2_8_10_w221 passing=230230 distinct=1 agreement: 26:1
+cand_2_8_10_w221 passing=230230 distinct=1 agreement: 26:1
+cand_2_8_10_w221 passing=230230 distinct=1 agreement: 26:1
+cand_2_8_10_w221 passing=230230 distinct=1 agreement: 26:1
+cand_2_8_10_w221 passing=230230 distinct=1 agreement: 26:1
+cand_2_8_10_w221 passing=230230 distinct=1 agreement: 26:1
+cand_2_8_10_w221 passing=230230 distinct=1 agreement: 26:1
+cand_2_8_10_w221 passing=230230 distinct=1 agreement: 26:1
+cand_2_8_10_w221 passing=230230 distinct=1 agreement: 26:1
+cand_2_8_10_w221 passing=230230 distinct=1 agreement: 26:1
+cand_2_8_10_w221 passing=230230 distinct=1 agreement: 26:1
+cand_2_8_10_w221 passing=230230 distinct=1 agreement: 26:1
+cand_2_8_10_w221 passing=230230 distinct=1 agreement: 26:1
+cand_2_8_10_w221 passing=230230 distinct=1 agreement: 26:1
+cand_2_8_14_w203 passing=11647 distinct=102 agreement: 20:97 22:4 24:1
+cand_2_8_14_w203 passing=11647 distinct=102 agreement: 20:97 22:4 24:1
+cand_2_8_14_w203 passing=11647 distinct=102 agreement: 20:97 22:4 24:1
+cand_2_8_14_w203 passing=11647 distinct=102 agreement: 20:97 22:4 24:1
+cand_2_8_14_w203 passing=11647 distinct=102 agreement: 20:97 22:4 24:1
+cand_2_8_14_w203 passing=11647 distinct=102 agreement: 20:97 22:4 24:1
+cand_2_8_14_w203 passing=11647 distinct=102 agreement: 20:97 22:4 24:1
+cand_2_8_14_w203 passing=11647 distinct=102 agreement: 20:97 22:4 24:1
+cand_2_8_14_w203 passing=11647 distinct=102 agreement: 20:97 22:4 24:1
+cand_2_8_14_w203 passing=11647 distinct=102 agreement: 20:97 22:4 24:1
+cand_2_8_14_w203 passing=11647 distinct=102 agreement: 20:97 22:4 24:1
+cand_2_8_14_w203 passing=11647 distinct=102 agreement: 20:97 22:4 24:1
+cand_2_8_14_w203 passing=11647 distinct=102 agreement: 20:97 22:4 24:1
+cand_2_8_14_w203 passing=11647 distinct=102 agreement: 20:97 22:4 24:1
+cand_2_8_14_w203 passing=11647 distinct=102 agreement: 20:97 22:4 24:1
+cand_2_8_14_w203 passing=11647 distinct=102 agreement: 20:97 22:4 24:1
+cand_2_8_14_w203 passing=11647 distinct=102 agreement: 20:97 22:4 24:1
+cand_2_8_14_w203 passing=11647 distinct=102 agreement: 20:97 22:4 24:1
+cand_2_8_14_w203 passing=11647 distinct=102 agreement: 20:97 22:4 24:1
+cand_2_8_14_w203 passing=11647 distinct=102 agreement: 20:97 22:4 24:1
+cand_2_8_14_w203 passing=11647 distinct=102 agreement: 20:97 22:4 24:1
+cand_2_8_14_w203 passing=11647 distinct=102 agreement: 20:97 22:4 24:1
+cand_2_8_14_w203 passing=11647 distinct=102 agreement: 20:97 22:4 24:1
+cand_2_8_14_w203 passing=11647 distinct=102 agreement: 20:97 22:4 24:1
+cand_2_8_14_w203 passing=11647 distinct=102 agreement: 20:97 22:4 24:1
+cand_2_8_14_w203 passing=11647 distinct=102 agreement: 20:97 22:4 24:1
+cand_2_8_14_w203 passing=11647 distinct=102 agreement: 20:97 22:4 24:1
+cand_2_8_14_w203 passing=11647 distinct=102 agreement: 20:97 22:4 24:1
+cand_2_8_14_w203 passing=11647 distinct=102 agreement: 20:97 22:4 24:1
+cand_2_8_14_w203 passing=11647 distinct=102 agreement: 20:97 22:4 24:1
+cand_2_8_14_w203 passing=11647 distinct=102 agreement: 20:97 22:4 24:1
+cand_2_8_14_w203 passing=11647 distinct=102 agreement: 20:97 22:4 24:1
+cand_4_8_12_w603 passing=3108176 distinct=72 agreement: 20:71 28:1
+cand_4_8_12_w603 passing=3108176 distinct=72 agreement: 20:71 28:1
+cand_4_8_12_w603 passing=3108176 distinct=72 agreement: 20:71 28:1
+cand_4_8_12_w603 passing=3108176 distinct=72 agreement: 20:71 28:1
+cand_4_8_12_w603 passing=3108176 distinct=72 agreement: 20:71 28:1
+cand_4_8_12_w603 passing=3108176 distinct=72 agreement: 20:71 28:1
+cand_4_8_12_w603 passing=3108176 distinct=72 agreement: 20:71 28:1
+cand_4_8_12_w603 passing=3108176 distinct=72 agreement: 20:71 28:1
+cand_6_8_14_w221 passing=230230 distinct=1 agreement: 26:1
+cand_6_8_14_w221 passing=230230 distinct=1 agreement: 26:1
+cand_6_8_14_w221 passing=230230 distinct=1 agreement: 26:1
+cand_6_8_14_w221 passing=230230 distinct=1 agreement: 26:1
+cand_6_8_14_w221 passing=230230 distinct=1 agreement: 26:1
+cand_6_8_14_w221 passing=230230 distinct=1 agreement: 26:1
+cand_6_8_14_w221 passing=230230 distinct=1 agreement: 26:1
+cand_6_8_14_w221 passing=230230 distinct=1 agreement: 26:1
+cand_6_8_14_w221 passing=230230 distinct=1 agreement: 26:1
+cand_6_8_14_w221 passing=230230 distinct=1 agreement: 26:1
+cand_6_8_14_w221 passing=230230 distinct=1 agreement: 26:1
+cand_6_8_14_w221 passing=230230 distinct=1 agreement: 26:1
+cand_6_8_14_w221 passing=230230 distinct=1 agreement: 26:1
+cand_6_8_14_w221 passing=230230 distinct=1 agreement: 26:1
+cand_6_8_14_w221 passing=230230 distinct=1 agreement: 26:1
+cand_6_8_14_w221 passing=230230 distinct=1 agreement: 26:1
+
+## sha256
+89c2b9cc51a8e6e50753b269e85c6c7c5131abe04682e843dded11c28901ba4b  tri_pts.bin
+0fe85cf12f126cd77a321eeee7786785d763208cdb0b7a1e528025232baa7d44  tri_lines.txt (sorted)
+# note: tri_pts.bin record order depends on thread timing, so its hash identifies this run's file only; compare record counts (1,548,858) and the summaries above when rerunning.

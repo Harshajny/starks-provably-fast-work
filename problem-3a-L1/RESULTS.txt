@@ -1,0 +1,165 @@
+# binom.c run: exact distinct list sizes, F_(p^2), p = 2^31 - 1, mu32, RS[mu32,17], agreement 20
+# summary (dedupe.py binom_hits.txt 1):
+groups=73539 (every class and coefficient with at least one passing set)
+  B even : max distinct members = 504  at ('B', 2, 14, 1556715293, 1168891274)
+  B odd  : max distinct members = 7  at ('B', 1, 13, 2147450879, 32768)
+  M even : max distinct members = 132  at ('M', 8, 8, 0, 0)
+  top distinct values (value: number of (class, coefficient) groups): [(504, 8), (497, 8), (152, 8), (132, 5), (121, 4), (107, 8), (100, 32), (96, 32), (88, 8), (72, 24)]
+
+# every (class, coefficient) with >= 100 passing 20-sets (dedupe.py binom_hits.txt 100):
+groups=73539; exact distinct members for groups with >= 100 passing sets:
+  passing=   504 distinct= 504  t^30 + lam*t^18, lam=(1556715293,1168891274)  agreement hist={20: 504}
+  passing=   504 distinct= 504  t^30 + lam*t^18, lam=(978592373,590768354)  agreement hist={20: 504}
+  passing=   504 distinct= 504  t^30 + lam*t^18, lam=(1168891274,590768354)  agreement hist={20: 504}
+  passing=   504 distinct= 504  t^30 + lam*t^18, lam=(590768354,1168891274)  agreement hist={20: 504}
+  passing=   504 distinct= 504  t^30 + lam*t^18, lam=(590768354,978592373)  agreement hist={20: 504}
+  passing=   504 distinct= 504  t^30 + lam*t^18, lam=(1168891274,1556715293)  agreement hist={20: 504}
+  passing=   504 distinct= 504  t^30 + lam*t^18, lam=(978592373,1556715293)  agreement hist={20: 504}
+  passing=   504 distinct= 504  t^30 + lam*t^18, lam=(1556715293,978592373)  agreement hist={20: 504}
+  passing=   497 distinct= 497  t^30 + lam*t^18, lam=(1,0)  agreement hist={20: 497}
+  passing=   497 distinct= 497  t^30 + lam*t^18, lam=(32768,2147450879)  agreement hist={20: 497}
+  passing=   497 distinct= 497  t^30 + lam*t^18, lam=(0,2147483646)  agreement hist={20: 497}
+  passing=   497 distinct= 497  t^30 + lam*t^18, lam=(2147450879,2147450879)  agreement hist={20: 497}
+  passing=   497 distinct= 497  t^30 + lam*t^18, lam=(2147483646,0)  agreement hist={20: 497}
+  passing=   497 distinct= 497  t^30 + lam*t^18, lam=(2147450879,32768)  agreement hist={20: 497}
+  passing=   497 distinct= 497  t^30 + lam*t^18, lam=(0,1)  agreement hist={20: 497}
+  passing=   497 distinct= 497  t^30 + lam*t^18, lam=(32768,32768)  agreement hist={20: 497}
+  passing=   152 distinct= 152  t^28 + lam*t^20, lam=(1556715293,1168891274)  agreement hist={20: 152}
+  passing=   152 distinct= 152  t^28 + lam*t^20, lam=(978592373,590768354)  agreement hist={20: 152}
+  passing=   152 distinct= 152  t^28 + lam*t^20, lam=(1168891274,590768354)  agreement hist={20: 152}
+  passing=   152 distinct= 152  t^28 + lam*t^20, lam=(590768354,1168891274)  agreement hist={20: 152}
+  passing=   152 distinct= 152  t^28 + lam*t^20, lam=(590768354,978592373)  agreement hist={20: 152}
+  passing=   152 distinct= 152  t^28 + lam*t^20, lam=(1556715293,978592373)  agreement hist={20: 152}
+  passing=   152 distinct= 152  t^28 + lam*t^20, lam=(978592373,1556715293)  agreement hist={20: 152}
+  passing=   152 distinct= 152  t^28 + lam*t^20, lam=(1168891274,1556715293)  agreement hist={20: 152}
+  passing= 42632 distinct= 132  t^28 + lam*t^20, lam=(2147450879,2147450879)  agreement hist={20: 128, 24: 42504}
+  passing= 42632 distinct= 132  t^28 + lam*t^20, lam=(32768,2147450879)  agreement hist={20: 128, 24: 42504}
+  passing= 42632 distinct= 132  t^24  agreement hist={20: 128, 24: 42504}
+  passing= 42632 distinct= 132  t^28 + lam*t^20, lam=(32768,32768)  agreement hist={20: 128, 24: 42504}
+  passing= 42632 distinct= 132  t^28 + lam*t^20, lam=(2147450879,32768)  agreement hist={20: 128, 24: 42504}
+  passing= 31996 distinct= 121  t^28 + lam*t^20, lam=(0,2147483646)  agreement hist={20: 118, 24: 31878}
+  passing= 31996 distinct= 121  t^28 + lam*t^20, lam=(1,0)  agreement hist={20: 118, 24: 31878}
+  passing= 31996 distinct= 121  t^28 + lam*t^20, lam=(2147483646,0)  agreement hist={20: 118, 24: 31878}
+  passing= 31996 distinct= 121  t^28 + lam*t^20, lam=(0,1)  agreement hist={20: 118, 24: 31878}
+  passing=   107 distinct= 107  t^26 + lam*t^22, lam=(1,0)  agreement hist={20: 107}
+  passing=   107 distinct= 107  t^26 + lam*t^22, lam=(0,1)  agreement hist={20: 107}
+  passing=   107 distinct= 107  t^26 + lam*t^22, lam=(2147450879,32768)  agreement hist={20: 107}
+  passing=   107 distinct= 107  t^26 + lam*t^22, lam=(32768,32768)  agreement hist={20: 107}
+  passing=   107 distinct= 107  t^26 + lam*t^22, lam=(32768,2147450879)  agreement hist={20: 107}
+  passing=   107 distinct= 107  t^26 + lam*t^22, lam=(2147483646,0)  agreement hist={20: 107}
+  passing=   107 distinct= 107  t^26 + lam*t^22, lam=(2147450879,2147450879)  agreement hist={20: 107}
+  passing=   107 distinct= 107  t^26 + lam*t^22, lam=(0,2147483646)  agreement hist={20: 107}
+  passing=   100 distinct= 100  t^28 + lam*t^20, lam=(1268478573,1343278549)  agreement hist={20: 100}
+  passing=   100 distinct= 100  t^28 + lam*t^20, lam=(186124154,437072858)  agreement hist={20: 100}
+  passing=   100 distinct= 100  t^28 + lam*t^20, lam=(1323015697,184408448)  agreement hist={20: 100}
+  passing=   100 distinct= 100  t^28 + lam*t^20, lam=(1005346917,298903262)  agreement hist={20: 100}
+  passing=   100 distinct= 100  t^28 + lam*t^20, lam=(804205098,879005074)  agreement hist={20: 100}
+  passing=   100 distinct= 100  t^28 + lam*t^20, lam=(1343278549,879005074)  agreement hist={20: 100}
+  passing=   100 distinct= 100  t^28 + lam*t^20, lam=(1142136730,298903262)  agreement hist={20: 100}
+  passing=   100 distinct= 100  t^28 + lam*t^20, lam=(1961359493,437072858)  agreement hist={20: 100}
+  passing=   100 distinct= 100  t^28 + lam*t^20, lam=(824467950,184408448)  agreement hist={20: 100}
+  passing=   100 distinct= 100  t^28 + lam*t^20, lam=(879005074,1343278549)  agreement hist={20: 100}
+  passing=   100 distinct= 100  t^28 + lam*t^20, lam=(1710410789,186124154)  agreement hist={20: 100}
+  passing=   100 distinct= 100  t^28 + lam*t^20, lam=(184408448,1323015697)  agreement hist={20: 100}
+  passing=   100 distinct= 100  t^28 + lam*t^20, lam=(437072858,186124154)  agreement hist={20: 100}
+  passing=   100 distinct= 100  t^28 + lam*t^20, lam=(437072858,1961359493)  agreement hist={20: 100}
+  passing=   100 distinct= 100  t^28 + lam*t^20, lam=(184408448,824467950)  agreement hist={20: 100}
+  passing=   100 distinct= 100  t^28 + lam*t^20, lam=(298903262,1005346917)  agreement hist={20: 100}
+  passing=   100 distinct= 100  t^28 + lam*t^20, lam=(879005074,804205098)  agreement hist={20: 100}
+  passing=   100 distinct= 100  t^28 + lam*t^20, lam=(1963075199,824467950)  agreement hist={20: 100}
+  passing=   100 distinct= 100  t^28 + lam*t^20, lam=(186124154,1710410789)  agreement hist={20: 100}
+  passing=   100 distinct= 100  t^28 + lam*t^20, lam=(298903262,1142136730)  agreement hist={20: 100}
+  passing=   100 distinct= 100  t^28 + lam*t^20, lam=(1963075199,1323015697)  agreement hist={20: 100}
+  passing=   100 distinct= 100  t^28 + lam*t^20, lam=(1961359493,1710410789)  agreement hist={20: 100}
+  passing=   100 distinct= 100  t^28 + lam*t^20, lam=(1848580385,1142136730)  agreement hist={20: 100}
+  passing=   100 distinct= 100  t^28 + lam*t^20, lam=(1323015697,1963075199)  agreement hist={20: 100}
+  passing=   100 distinct= 100  t^28 + lam*t^20, lam=(1848580385,1005346917)  agreement hist={20: 100}
+  passing=   100 distinct= 100  t^28 + lam*t^20, lam=(1268478573,804205098)  agreement hist={20: 100}
+  passing=   100 distinct= 100  t^28 + lam*t^20, lam=(804205098,1268478573)  agreement hist={20: 100}
+  passing=   100 distinct= 100  t^28 + lam*t^20, lam=(1710410789,1961359493)  agreement hist={20: 100}
+  passing=   100 distinct= 100  t^28 + lam*t^20, lam=(1005346917,1848580385)  agreement hist={20: 100}
+  passing=   100 distinct= 100  t^28 + lam*t^20, lam=(824467950,1963075199)  agreement hist={20: 100}
+  passing=   100 distinct= 100  t^28 + lam*t^20, lam=(1142136730,1848580385)  agreement hist={20: 100}
+  passing=   100 distinct= 100  t^28 + lam*t^20, lam=(1343278549,1268478573)  agreement hist={20: 100}
+  passing= 10684 distinct=  59  t^28 + lam*t^24, lam=(1073741824,1073741824)  agreement hist={20: 58, 24: 10626}
+  passing= 10684 distinct=  59  t^24 + lam*t^20, lam=(1,1)  agreement hist={20: 58, 24: 10626}
+  passing= 10684 distinct=  59  t^28 + lam*t^24, lam=(1073741824,1073774591)  agreement hist={20: 58, 24: 10626}
+  passing= 10684 distinct=  59  t^24 + lam*t^20, lam=(32769,32768)  agreement hist={20: 58, 24: 10626}
+  passing= 10684 distinct=  59  t^28 + lam*t^24, lam=(1073774591,1073741824)  agreement hist={20: 58, 24: 10626}
+  passing= 10684 distinct=  59  t^24 + lam*t^20, lam=(32768,32769)  agreement hist={20: 58, 24: 10626}
+  passing= 10684 distinct=  59  t^28 + lam*t^24, lam=(1073741824,1073774592)  agreement hist={20: 58, 24: 10626}
+  passing= 10684 distinct=  59  t^24 + lam*t^20, lam=(2147450880,32768)  agreement hist={20: 58, 24: 10626}
+  passing= 10684 distinct=  59  t^28 + lam*t^24, lam=(1073774592,1073741824)  agreement hist={20: 58, 24: 10626}
+  passing= 10684 distinct=  59  t^24 + lam*t^20, lam=(32768,2147450880)  agreement hist={20: 58, 24: 10626}
+  passing= 10684 distinct=  59  t^28 + lam*t^24, lam=(32768,0)  agreement hist={20: 58, 24: 10626}
+  passing= 10684 distinct=  59  t^24 + lam*t^20, lam=(65536,0)  agreement hist={20: 58, 24: 10626}
+  passing= 10684 distinct=  59  t^28 + lam*t^24, lam=(1073709056,1073741824)  agreement hist={20: 58, 24: 10626}
+  passing= 10684 distinct=  59  t^24 + lam*t^20, lam=(2147450879,32769)  agreement hist={20: 58, 24: 10626}
+  passing= 10684 distinct=  59  t^28 + lam*t^24, lam=(0,32768)  agreement hist={20: 58, 24: 10626}
+  passing= 10684 distinct=  59  t^24 + lam*t^20, lam=(0,65536)  agreement hist={20: 58, 24: 10626}
+  passing= 10684 distinct=  59  t^28 + lam*t^24, lam=(1073741823,1073709055)  agreement hist={20: 58, 24: 10626}
+  passing= 10684 distinct=  59  t^24 + lam*t^20, lam=(32767,2147450879)  agreement hist={20: 58, 24: 10626}
+  passing= 10684 distinct=  59  t^28 + lam*t^24, lam=(1073741823,1073774591)  agreement hist={20: 58, 24: 10626}
+  passing= 10684 distinct=  59  t^24 + lam*t^20, lam=(2147450878,32768)  agreement hist={20: 58, 24: 10626}
+  passing= 10684 distinct=  59  t^28 + lam*t^24, lam=(1073741823,1073741824)  agreement hist={20: 58, 24: 10626}
+  passing= 10684 distinct=  59  t^24 + lam*t^20, lam=(2147483646,1)  agreement hist={20: 58, 24: 10626}
+  passing= 10684 distinct=  59  t^28 + lam*t^24, lam=(1073741823,1073774592)  agreement hist={20: 58, 24: 10626}
+  passing= 10684 distinct=  59  t^24 + lam*t^20, lam=(32767,32768)  agreement hist={20: 58, 24: 10626}
+  passing= 10684 distinct=  59  t^28 + lam*t^24, lam=(1073741824,1073709055)  agreement hist={20: 58, 24: 10626}
+  passing= 10684 distinct=  59  t^24 + lam*t^20, lam=(2147450880,2147450879)  agreement hist={20: 58, 24: 10626}
+  passing= 10684 distinct=  59  t^28 + lam*t^24, lam=(1073741823,1073709056)  agreement hist={20: 58, 24: 10626}
+  passing= 10684 distinct=  59  t^24 + lam*t^20, lam=(2147450878,2147450879)  agreement hist={20: 58, 24: 10626}
+  passing= 10684 distinct=  59  t^28 + lam*t^24, lam=(2147450879,0)  agreement hist={20: 58, 24: 10626}
+  passing= 10684 distinct=  59  t^24 + lam*t^20, lam=(2147418111,0)  agreement hist={20: 58, 24: 10626}
+  passing= 10684 distinct=  59  t^28 + lam*t^24, lam=(1073741824,1073709056)  agreement hist={20: 58, 24: 10626}
+  passing= 10684 distinct=  59  t^24 + lam*t^20, lam=(32769,2147450879)  agreement hist={20: 58, 24: 10626}
+  passing= 10684 distinct=  59  t^28 + lam*t^24, lam=(1073774591,1073741823)  agreement hist={20: 58, 24: 10626}
+  passing= 10684 distinct=  59  t^24 + lam*t^20, lam=(32768,2147450878)  agreement hist={20: 58, 24: 10626}
+  passing= 10684 distinct=  59  t^28 + lam*t^24, lam=(1073741823,1073741823)  agreement hist={20: 58, 24: 10626}
+  passing= 10684 distinct=  59  t^24 + lam*t^20, lam=(2147483646,2147483646)  agreement hist={20: 58, 24: 10626}
+  passing= 10684 distinct=  59  t^28 + lam*t^24, lam=(1073709055,1073741823)  agreement hist={20: 58, 24: 10626}
+  passing= 10684 distinct=  59  t^24 + lam*t^20, lam=(2147450879,32767)  agreement hist={20: 58, 24: 10626}
+  passing= 10684 distinct=  59  t^28 + lam*t^24, lam=(0,2147450879)  agreement hist={20: 58, 24: 10626}
+  passing= 10684 distinct=  59  t^24 + lam*t^20, lam=(0,2147418111)  agreement hist={20: 58, 24: 10626}
+  passing= 10684 distinct=  59  t^28 + lam*t^24, lam=(1073709055,1073741824)  agreement hist={20: 58, 24: 10626}
+  passing= 10684 distinct=  59  t^24 + lam*t^20, lam=(2147450879,2147450880)  agreement hist={20: 58, 24: 10626}
+  passing= 10684 distinct=  59  t^28 + lam*t^24, lam=(1073774592,1073741823)  agreement hist={20: 58, 24: 10626}
+  passing= 10684 distinct=  59  t^24 + lam*t^20, lam=(32768,32767)  agreement hist={20: 58, 24: 10626}
+  passing= 10684 distinct=  59  t^28 + lam*t^24, lam=(1073709056,1073741823)  agreement hist={20: 58, 24: 10626}
+  passing= 10684 distinct=  59  t^24 + lam*t^20, lam=(2147450879,2147450878)  agreement hist={20: 58, 24: 10626}
+  passing= 10684 distinct=  59  t^28 + lam*t^24, lam=(1073741824,1073741823)  agreement hist={20: 58, 24: 10626}
+  passing= 10684 distinct=  59  t^24 + lam*t^20, lam=(1,2147483646)  agreement hist={20: 58, 24: 10626}
+  passing= 10674 distinct=  49  t^30 + lam*t^22, lam=(1,0)  agreement hist={20: 48, 24: 10626}
+  passing= 10674 distinct=  49  t^26 + lam*t^18, lam=(1,0)  agreement hist={20: 48, 24: 10626}
+  passing= 10674 distinct=  49  t^30 + lam*t^22, lam=(2147483646,0)  agreement hist={20: 48, 24: 10626}
+  passing= 10674 distinct=  49  t^26 + lam*t^18, lam=(2147483646,0)  agreement hist={20: 48, 24: 10626}
+  passing= 10674 distinct=  49  t^30 + lam*t^22, lam=(0,1)  agreement hist={20: 48, 24: 10626}
+  passing= 10674 distinct=  49  t^26 + lam*t^18, lam=(0,1)  agreement hist={20: 48, 24: 10626}
+  passing= 10674 distinct=  49  t^30 + lam*t^22, lam=(0,2147483646)  agreement hist={20: 48, 24: 10626}
+  passing= 10674 distinct=  49  t^26 + lam*t^18, lam=(0,2147483646)  agreement hist={20: 48, 24: 10626}
+  passing= 10626 distinct=   1  t^31 + lam*t^23, lam=(0,2147483646)  agreement hist={24: 10626}
+  passing= 10626 distinct=   1  t^29 + lam*t^21, lam=(0,2147483646)  agreement hist={24: 10626}
+  passing= 10626 distinct=   1  t^27 + lam*t^19, lam=(0,2147483646)  agreement hist={24: 10626}
+  passing= 10626 distinct=   1  t^25 + lam*t^17, lam=(0,2147483646)  agreement hist={24: 10626}
+  passing= 10626 distinct=   1  t^31 + lam*t^23, lam=(1,0)  agreement hist={24: 10626}
+  passing= 10626 distinct=   1  t^29 + lam*t^21, lam=(1,0)  agreement hist={24: 10626}
+  passing= 10626 distinct=   1  t^27 + lam*t^19, lam=(1,0)  agreement hist={24: 10626}
+  passing= 10626 distinct=   1  t^25 + lam*t^17, lam=(1,0)  agreement hist={24: 10626}
+  passing= 10626 distinct=   1  t^31 + lam*t^23, lam=(2147483646,0)  agreement hist={24: 10626}
+  passing= 10626 distinct=   1  t^29 + lam*t^21, lam=(2147483646,0)  agreement hist={24: 10626}
+  passing= 10626 distinct=   1  t^27 + lam*t^19, lam=(2147483646,0)  agreement hist={24: 10626}
+  passing= 10626 distinct=   1  t^25 + lam*t^17, lam=(2147483646,0)  agreement hist={24: 10626}
+  passing= 10626 distinct=   1  t^31 + lam*t^23, lam=(0,1)  agreement hist={24: 10626}
+  passing= 10626 distinct=   1  t^29 + lam*t^21, lam=(0,1)  agreement hist={24: 10626}
+  passing= 10626 distinct=   1  t^27 + lam*t^19, lam=(0,1)  agreement hist={24: 10626}
+  passing= 10626 distinct=   1  t^25 + lam*t^17, lam=(0,1)  agreement hist={24: 10626}
+all other groups have < 100 passing sets (max 96), so fewer than 100 distinct members
+
+# cross-checks (crosscheck.py binom_hits.txt hits.txt):
+504 group equals step-1 hits: True 504 504
+497 (t^30 + lam t^18, lam = 1): passing=497 failing_interpolation=0 distinct_members=497
+152 (t^28 + lam t^20): passing=152 failing_interpolation=0 distinct_members=152
+odd max 7 (t^31 + lam t^19): passing=7 failing_interpolation=0 distinct_members=7
+
+# sha256 of the SORTED binom_hits.txt (LC_ALL=C sort; 1,266,304 lines, 38 MB, not attached;
+# line order varies with thread timing, so hash the sorted file): ccb98988276514c0c899f2954a3f73c9f2029dd0920053f8d89a5d65a4a930b1
