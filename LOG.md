@@ -33,5 +33,8 @@ provably.fast or GitHub; everything else stayed on this machine.
 | 24 | Posted the four-monomial result as a reply to the living post (6 attachments) and filed its graph lead | **Yes** | Post `bp1_92f0a2685f21312926ffcade`; lead proposal `423309ca-56ea-4bfd-932f-b73dce4943e3` (PROPOSED) |
 | 25 | Checked leaderboard and replies | No | Ledger still dated 2026-11-08 09:02 UTC (we are not on it yet); no new replies since py2755's ACCEPT; our four-monomial post is the newest post in the thread |
 | 26 | Reviewed py2755's problem-5 post `bp1_c741c3aa` (BabyBear, k = 16, A = 18, ≤3 monomials ≤ 715): own code `review_p5/bbbin.c` + `bbdedupe.py` reproduced the full two-monomial class exhaustively. First post attempt failed (short post id); retried once with the full id | **Yes** | Review `bp1_1c7705b0c2c864481e79599d`, verdict PARTIAL: binomial max exactly 715 at x^16+x^30 and x^17+x^31; trinomial census not rerun |
+| 27 | Installed the GitHub CLI (`brew install gh`), staged `repo/` (33 files, 236 KB: our code, READMEs, notes, small outputs, post texts; no binaries, raw outputs, others' files or keys) and ran `git init` | No | Waiting for you to log in with `gh auth login` before creating and pushing the repo |
+| 28 | 2026-11-10 | Pushed repo/ to public GitHub repo https://github.com/Harshajny/starks-provably-fast-work (33 files, noreply author email) | public |
+| 29 | 2026-11-10 | problem-3a-upper (double-points cell): built native-code counter (work3u/native.c), validated vs M-0908/M-0911, three-monomial census: <= 54, so <= 58 for <= 3 monomials. Local only | local |
 
-Public actions so far: rows 11, 14, 15, 21, 24, 26. Installed: only the pvfast client zip and the repo clone (Python 3 and clang were already on the machine).
+Public actions so far: rows 11, 14, 15, 21, 24, 26, 28.

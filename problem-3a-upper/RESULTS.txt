@@ -1,0 +1,18 @@
+problem-3a-upper, native circle code N_32 = {deg P <= 16, P0 + P16 = 0} on mu32 in F_(p^2), p = 2^31-1, agreement 20.
+Words: coefficients in F_(p^2) on the 16 high monomials x^16..x^31 (the word space mod N).
+
+Validation (native.c, exhaustive over all 225,792,840 twenty-sets):
+  RS control t^18 + w^2 t^30 : 504 (rs mode)      RS control t^24 : 132 (rs mode)
+  native x^24 : 58  (M-0908)   x^20, x^28 : 4 (M-0908)   x^16 : 0   x^20 + x^28 : 43 (M-0911)
+
+Three high monomials, all 560 supports in 16..31, all coefficients (trinat.c, 12 min, 10 threads):
+  rank-2 (single word) sets 33,255,120 ; rank-1 (line) sets 195,212 on 2,497 distinct lines ; all-word sets 4
+  max canonical point members at one word: 17 ; heavy lines (multiplicity >= 40): 18, all >= 500 ; max light line: 21
+Exact recounts (native.c):
+  424 words with point+concurrent-line weight >= 40 : max 35 (x^20 + c x^24 + i x^28 family)
+  360 words with weight 20..39                       : max 27
+  18 generic words, one per heavy line              : max 31
+Bound for every other three-monomial word: single heavy line 31 + 19 + 4 = 54 ; single light line 21 + 19 + 4 = 44 ; else < 20 + 4.
+=> Every word with exactly three high monomials has native list <= 54 (exact max found 35).
+With M-0908 (one: <= 58, at x^24) and M-0911 (two: <= 43): every word with at most three high monomials has
+native list <= 58, and 58 is reached only at nonzero multiples of x^24.
