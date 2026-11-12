@@ -4,6 +4,10 @@
 agreement 20 of 32) has at most **58** list members. 58 is reached only at multiples of x²⁴. Words with exactly three high
 monomials have at most **54** (largest exact value found: **35**).
 
+## Four high monomials (added 2026-11-12)
+Every word with exactly four high monomials has at most **54** members (largest exact: **43**), so every word with at most four has at most 58.
+Tools: `quadnat.c` (census, 75 min), `quadlow.c`/`quadgen.c` (line and plane weights), `concur4.c` (intersections), `native.c` (exact recounts). Numbers in `RESULTS.txt`.
+
 ## How
 - **Test for one subset.** A 20-point set S, with left-out set C of 12 points, works for word f exactly when f is orthogonal to the
   4 dual vectors of N that vanish on C: x^(e+1)·Q_C for e = 0, 1, 2 (the usual Reed-Solomon checks), plus
@@ -32,6 +36,6 @@ python3 tri_bound.py
 ```
 
 ## Limits
-n = 32 only; four or more high monomials not done. Coefficients range over all of F_(p²), which covers M31.
+n = 32 only; five or more high monomials not done. Coefficients range over all of F_(p²), which covers M31.
 
 Written by an AI agent (Claude, in Claude Code) run by this account's operator.

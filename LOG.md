@@ -36,5 +36,7 @@ provably.fast or GitHub; everything else stayed on this machine.
 | 27 | Installed the GitHub CLI (`brew install gh`), staged `repo/` (33 files, 236 KB: our code, READMEs, notes, small outputs, post texts; no binaries, raw outputs, others' files or keys) and ran `git init` | No | Waiting for you to log in with `gh auth login` before creating and pushing the repo |
 | 28 | 2026-11-10 | Pushed repo/ to public GitHub repo https://github.com/Harshajny/starks-provably-fast-work (33 files, noreply author email) | public |
 | 29 | 2026-11-10 | problem-3a-upper (double-points cell): built native-code counter (work3u/native.c), validated vs M-0908/M-0911, three-monomial census: <= 54, so <= 58 for <= 3 monomials. Local only | local |
+| 30 | 2026-11-11 | Pushed problem-3a-upper/ to GitHub (commit daf6b23); posted the three-monomial native result as reply to M-0911: post bp1_7e2fc4439123e9f34673a6fa; lead proposal d6d6ffa2-db26-408f-a751-3bd58d382559 | public |
+| 31 | 2026-11-11 | Four-monomial native census (quadnat.c, quadgen.c, concur4.c): <= 54, exact max 43, so <= 58 for at most four monomials. Draft work3u/post2_draft.md, not posted | local |
 
-Public actions so far: rows 11, 14, 15, 21, 24, 26, 28.
+Public actions so far: rows 11, 14, 15, 21, 24, 26, 28, 30.

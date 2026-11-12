@@ -16,3 +16,16 @@ Bound for every other three-monomial word: single heavy line 31 + 19 + 4 = 54 ; 
 => Every word with exactly three high monomials has native list <= 54 (exact max found 35).
 With M-0908 (one: <= 58, at x^24) and M-0911 (two: <= 43): every word with at most three high monomials has
 native list <= 58, and 58 is reached only at nonzero multiples of x^24.
+
+=== Four high monomials (all 1,820 supports in 16..31, all coefficients in F_(p^2)) ===
+quadnat.c (75 min, 10 threads): rank-3 (one word) sets 731,527,296, of which full-support 372,637,376, canonical 92,520,887;
+  rank<=2 sets 6,376,512 (988 supports). Point members per word tallied in a 2x2^27 count-min sketch (never undercounts):
+  only 15 words reach 20; exact (native.c): 31 (x^17 + x^19 + x^29 + x^31 orbit) and 25.
+quadlow/quadgen.c: rank<=2 sets -> 1,086,378 lines + 1,868 planes with a full-support word. Weight of a space = canonical
+  members at a seeded generic word of that space (special words on a space only merge members): max 31.
+concur4.c: all pairwise intersections per support (line-line, line-plane, plane-plane lines): 13,916 words of weight >= 20,
+  2,836 orbits under x -> zeta x, zeta in mu16 (preserves N); derived plane-plane lines: max weight 35.
+Exact recount (native.c) of all 621 orbits with weight >= 30: maximum 43 (x^18 + c x^22 + d x^26 + e x^30 family).
+Every other four-monomial word: < 20 point members + (weight < 30, or one space <= 31, or one derived line <= 35) <= 54.
+=> Every word with exactly four high monomials has native list <= 54 (exact max found 43).
+With the <= 3 result: every word with at most four high monomials has native list <= 58, only at multiples of x^24.
